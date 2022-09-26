@@ -1,0 +1,145 @@
+
+body {
+    margin: 0px;
+    background-color: rgb(237, 224, 159);
+    font-family:URW Chancery L, cursive;
+  }  
+
+header {
+    background-color:rgb(49, 4, 45);
+    color:rgb(31, 137, 98);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    }
+
+header h1{
+    margin-left: 10px;
+}
+    
+
+#logo  {
+    border-style: solid;
+    border-color: rgb(31, 137, 98);
+    width: 100px;
+    height: 100px;
+
+    
+}
+
+/* ------------- */
+
+nav { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+
+    text-align: left;
+    padding: 10px;
+    margin-top: 20px;
+    background-color:rgb(230, 173, 30);
+}
+nav a {
+    color:rgb(17, 18, 17);
+    text-decoration: none; 
+    margin: 10px; 
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- */
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.container {
+    margin: 20px 5px 0px 5px;
+    margin-top: 20px;
+    background-color: rgb(139, 227, 190);
+    border-style: solid;
+    border-color: rgb(31, 137, 98);
+    border-width: 5px;
+    padding: 10px;
+}
+
+.container-2
+{
+    order: 1;
+}
+
+.container a {
+    color:rgb(17, 18, 17);
+    text-decoration: none;
+}
+.container a:hover {
+    text-decoration: underline;
+}
+
+.list{
+    color: rgb(48, 23, 209);
+}
+
+h2{
+    color: rgb(35, 33, 34);
+    margin-left: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border-style: solid;
+}
+table tbody tr:nth-child(odd){
+	background: #fff;
+}
+table tbody tr:nth-child(even){
+	background: #daea9a;
+}
+
+table th {
+	background: rgb(228, 163, 207);
+}
+
+
+footer {
+    display: flex;
+    background-color:rgb(49, 4, 45);; 
+    margin-top:20px; 
+    padding: 10px;
+    height:60px;
+}
+footer p {
+        color: beige;
+}
+@media screen and (min-width: 800px) {  
+    header {
+        display: flex;
+        flex-direction: row;
+        padding: 40px;
+        justify-content: flex-start;
+    }
+
+    nav { 
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: center;
+    
+        padding: 10px;
+        margin-top: 20px;
+        background-color:rgb(230, 173, 30);
+    }
+    .container-3
+    {
+        order: 1;
+    }
+
+  }

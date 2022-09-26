@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>my first website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <img id="logo" class="center" src="https://avatars.yandex.net/get-music-content/99892/371786db.a.8122168-1/m1000x1000?webp=false"
+            alt="logo" />
+            <h1 id="name">GIRAFFES</h1>
+
+        </header>
+
+        <!-- navigation -->
+        <nav>
+            <a href="#menu" id="menu"> Меню </a>
+            <a href="#list" > Список </a>
+            <a href="#table" > Таблица </a>
+            <a href="#reg" > Регистрация </a>
+        </nav>
+
+        <!-- content -->
+        <div class="content">
+
+            <div class="container container-1" id="list">
+                <h2> Список: </h2>
+                <ol >
+                    <li><a href="http://example.com/" > ссылка на главную страницу сайта example.com </a></li>
+                    <li><a href="https://example.com/"> ссылка на главную страницу сайта example.com в протоколе https</a></li>
+                    <li><a href="ftp://example.com/file.zip"> ссылка на файл на сервере FTP без авторизации</a></li>
+                    <li><a href="ftp://user:password@example.com/myfile.zip">ссылка на файл на сервере FTP с авторизацией</a></li>
+                    <li><a href="https://example.com#bottom">ссылка на фрагмент страницы некоторого сайта</a></li>
+                    <li><a href="#reg">ссылку на фрагмент текущей страницы</a></li>
+                    <li><a href="https://www.wildberries.ru/catalog/0/search.aspx?sort=popular&search=черная+футболка">Ссылка с двумя параметрами</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="https://www.iana.org/domains" title="iana.org/domains">Domains</a></li>
+                            <li><a href="https://www.iana.org/protocols" title="iana.org/protocols">Protocols</a></li>
+                            <li><a href="https://www.iana.org/numbers" title="iana.org/numbers">Numbers</a></li>
+                            <li><a href="https://www.iana.org/about" title="iana.org/about">About</a></li>
+                        </ul>
+                    </li>
+                    <li><a> ссылкa без href </a></li>
+                    <li><a href="">ссылка с пустым href</a></li>
+                    <li><a href="http://example.com" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+                    <li><!--noindex--><a href="http://example.com/">Ссылка с запретом на индексацию</a><!--/noindex--></li>
+                    <li><p>Привет! Сегодня дождь и скверно, А мы не виделись, наверно, сто лет. 
+                        Тебе в <a href="https://online.metro-cc.ru/">метро</a>? Скажи на милость, А ты совсем не изменилась, нет-нет.</p></li>
+                        <li><a href="https://cats.com/"><img src="https://i.artfile.ru/2048x1188_1202028_[www.ArtFile.ru].jpg"
+                            width="120" height="60"
+                            alt="Картинка жираф"></a></li>
+                            <li><img src="https://autogear.ru/misc/i/gallery/98402/2640804.jpg" 
+                                width="120" height="60"
+                                alt="картинка квадратики и кружочки" usemap="#Navigation"></li>
+                                
+                                <map name="Navigation">
+                                    <area shape="rect" coords="168,32,286,154" href="https://ru.wikipedia.org/wiki/" alt="Wikipedia">
+                                    <area shape="circle" coords="80,95,59" href="https://ya.ru/" alt="Yandex">
+                                </map>
+                                
+                                <li><a href="news.html">относительная на страницу в текущем каталоге</a></li>
+                    <li><a href="about/myfamily.html">ссылка в каталоге about</a></li>
+                    <li><a href="../magazine.html">относительная на страницу в каталоге уровнем выше текущего</a></li>
+                    <li><a href="../../news.html">относительная на страницу в каталоге двумя уровнями выше</a></li>
+                    <li><a href="/">сокращенная на главную</a></li>
+                    <li><a href="/news/sport.html">сокращенная ссылка на внутреннюю</a></li>
+                </ol> 
+            </div>
+            
+            <div class="container container-2" id="table">
+                <table>
+                    <tr>
+                        <th>Колонка 1</th>
+                        <th>Колонка 2</th>
+                        <th>Колонка 3</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Ячейка 11 объединенная с 12</td>
+                        <td>Ячейка 13</td> 
+                    </tr>
+                    <tr>
+                        <td>Ячейка 21</td>
+                        <td>Ячейка 22</td>
+                        <td>Ячейка 23</td>              
+                    </tr> 
+                    
+                    <tr>
+                        <td colspan="2">Ячейка 31 объединенная с 32</td>
+                        <td rowspan="2">Ячейка 33 <br/>объединенная с 43</td> 
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Ячейка 41</td>
+                        <td>Ячейка 42</td> 
+                    </tr>
+                    
+                    <tr>
+                        <td>Ячейка 51</td>
+                        <td>Ячейка 52</td> 
+                        <td>Ячейка 53</td> 
+                    </tr>
+                    
+                </table>
+            </div>
+            
+            <div class="container container-3" class="form" id="reg">
+                <h2>Регистрация</h2></a> 
+                <form action="/" 
+                method="POST">
+                
+                <label>
+                        Имя:
+                        <input name="field-name-1"
+                        type="text" 
+                        required placeholder="Ваше имя" />
+                    </label> <br />
+                    
+                    <label>
+                        E-mail: 
+                        <input name="field-email"
+                        type="email" 
+                        required placeholder="Электронная почта" /> 
+                    </label> <br /><br />
+                    
+                    <label>
+                        Дата Рождения: 
+                        <input name="field-date"
+                        type="date"
+                        value="2022-02-22">
+                    </label> <br /><br />
+                    
+                    Ваш пол: <br /> 
+                    <label>
+                        <input type="radio" checked="checked"
+                        name="radio-group-1" value="Значение1" />
+                        Женский &#9792
+                    </label>
+                    
+                    <label>
+                        <input type="radio"
+                        name="radio-group-1" value="Значение2" />
+                        Мужской &#9794
+                    </label> <br /> <br />
+                    
+                    Количество Ваших конечностей: <br /> 
+                    <label>
+                        <input type="radio" 
+                        name="radio-group-2" value="Значение1" />
+                        1
+                    </label>
+                    <label>
+                        <input type="radio" 
+                        name="radio-group-2" value="Значение2" />
+                        2
+                    </label>
+                    <label>
+                        <input type="radio" 
+                        name="radio-group-2" value="Значение3" />
+                        3
+                    </label>
+                    <label>
+                        <input type="radio" checked="checked" 
+                        name="radio-group-2" value="Значение4" />
+                        4
+                    </label>
+                    <label>
+                        <input type="radio" 
+                        name="radio-group-2" value="Значение5" />
+                        999999
+                    </label> <br /> <br />
+                    
+                    <label>
+                        Ваши сверхспособности:<br />
+                        <select name="select" multiple="multiple">
+                            <option value="Значение1" selected="selected">Бессмертие</option>
+                            <option value="Значение2">Прохождение сквозь стены</option>
+                            <option value="Значение3" selected="selected">Левитация</option>
+                        </select>
+                    </label><br /><br />
+                    
+                    <label>
+                        Биография: <br />
+                        <textarea name="field-name-2"> Расскажите о себе... </textarea>
+                    </label><br /><br />
+                    
+                    <label>
+                        <input type="checkbox"
+                        name="check-1" />
+                        С контрактом ознакомлен(a)
+                    </label><br />
+                    <input type="submit" value="Отправить" />
+                    
+                </form>
+            </div>
+        </div>
+        
+        <!-- footer -->
+        <footer>
+            <p>&#169 Паничева Валерия 2022</p>
+        </footer>
+        
+    </body>
+    </html>
