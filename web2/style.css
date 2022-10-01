@@ -1,83 +1,42 @@
-
-
 body {
     margin: 0px;
-    background-color: rgb(237, 224, 159);
+    background-color: rgb(25, 23, 26);
     font-family:cursive;
-  }  
+}  
 
 header {
     width:100%; 
     padding: 10px; 
-    height: 120px;
-    color:rgb(31, 137, 98);
-    background-color:rgb(49, 4, 45);
+    height: 140px;
+    background-color:rgb(164, 240, 71);
+    color:rgb(3, 4, 4);
+    box-sizing: border-box;
+}
+    
+header h1{
+    margin-top: 40px;
+}
+    
+#logo  {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: -32px 35px 0 0; 
+    border-style: solid;
+    border-color: rgb(31, 137, 98);
 }
 
 nav { 
     text-align: center;
     background-color:rgb(230, 173, 30);
+    box-sizing: border-box;
     padding: 20px;
 }
-
-footer {
-    width:100%; 
-    background-color:rgb(49, 4, 45);
-    padding: 10px;
-    height:60px;
-    color: beige;
-}
-
-#logo  {
-    width: 100px;
-    height: 100px;
-    float: left;
-    margin: -15px 35px 0 0; 
-    border-style: solid;
-    border-color: rgb(31, 137, 98);
-}
- 
-header h1{
-    margin-top: 40px;
-}
-
-.container {
-    box-sizing: border-box;
-    padding: 30px;
-    margin-bottom: 20px;
-    background-color: rgb(139, 227, 190);
-    border-style: solid;
-    border-color: rgb(31, 137, 98);
-    border-width: 5px;
-    font-family: Andale Mono, monospace;
-}
-
-#list h2{
-    color: rgb(35, 33, 34);
-}
-.container a {
-    color:rgb(17, 18, 17);
-    text-decoration: none;
-}
-.container a:hover {
-    text-decoration: underline;
-}
-table {
-    border-collapse: collapse;
-    width: 100%;
-    
-}
-
-td, th {
-    border-style: solid;
-}
-
 
 nav a {
     color:rgb(17, 18, 17);
     text-decoration: none;
     margin: 10px; 
-
 }
 
 nav a:hover {
@@ -85,21 +44,57 @@ nav a:hover {
 }
 
 .center {
-    box-sizing: border-box;
     max-width: 960px;
-    margin: 20px auto;
+    margin: 20px auto 0px auto;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(43, 137, 31);
+    border-width: 5px;
+    font-family: Andale Mono, monospace;
 }
 
 
+.container a {
+    color:rgb(17, 18, 17);
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-style: solid;    
+}
+
+td, th {
+    border-style: solid;
+}
 
 table tbody tr:nth-child(odd){
 	background: #fff;
 }
+
 table tbody tr:nth-child(even){
 	background: #daea9a;
 }
 
 table th {
-	background: rgb(228, 163, 207);
+	background: rgb(230, 173, 30);
 }
 
+footer {
+    width:100%; 
+    background-color:rgb(43, 137, 31);
+    padding: 10px;
+    height:80px;
+    box-sizing: border-box;
+}
