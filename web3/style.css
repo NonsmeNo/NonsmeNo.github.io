@@ -1,24 +1,27 @@
-
 body {
     margin: 0px;
-    background-color: rgb(237, 224, 159);
-    font-family: cursive;
-  }  
+    background-color: rgb(25, 23, 26);
+    font-family: tahoma;
+  }
 
 header {
-    background-color:rgb(49, 4, 45);
-    color:rgb(31, 137, 98);
+    background-color:rgb(164, 240, 71);
+    color:rgb(3, 4, 4);
+    }
+    
+.head {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding:20px;
     }
 
+
 header h1{
-    margin-left: 10px;
+    margin-left: 20px;
+    font-family: cursive;
 }
     
-
 #logo  {
     border-style: solid;
     border-color: rgb(31, 137, 98);
@@ -56,15 +59,16 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: stretch;
 }
 .container {
-    margin: 20px 5px 0px 5px;
-    margin-top: 20px;
-    background-color: rgb(139, 227, 190);
+    /* background-color: rgb(139, 227, 190); */
+    background-color: white;
     border-style: solid;
-    border-color: rgb(31, 137, 98);
+    border-color: rgb(43, 137, 31);
     border-width: 5px;
     padding: 10px;
+    margin: 20px 5px 0px 5px;
 }
 
 .container-2
@@ -105,39 +109,48 @@ table tbody tr:nth-child(even){
 }
 
 table th {
-	background: rgb(228, 163, 207);
+	background: rgb(230, 173, 30);
 }
 
 
 footer {
     display: flex;
-    background-color:rgb(49, 4, 45);; 
+    background-color:rgb(43, 137, 31);
     margin-top:20px; 
     padding: 10px;
     height:60px;
 }
-footer p {
-        color: beige;
-}
+
+
 @media screen and (min-width: 800px) {  
-    header {
+    
+    body{
+        font-family: cursive;
+    }
+    .head{
+        max-width: 960px;
+        margin: 0px auto 0px auto;
         display: flex;
-        flex-direction: row;
-        padding: 40px;
         justify-content: flex-start;
+
     }
 
-    nav { 
-        display: flex;
-        flex-direction: row;
-        box-sizing: border-box;
+    nav{
+        max-width: 960px;
+        margin-left:auto;
+        margin-right:auto;
         justify-content: center;
-    
-        padding: 10px;
-        margin-top: 20px;
-        background-color:rgb(230, 173, 30);
+        flex-direction: row;
     }
-    .container-3
+
+   /* ---------- */
+    .content
+    {
+        max-width: 960px;
+        margin: 0px auto 20px auto;  
+    }
+    
+  .container-3
     {
         order: 1;
     }
