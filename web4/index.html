@@ -10,14 +10,205 @@
     </head>
 
     <body>
-        <header>
-            <div class="container-fluid">
+        <header class="container-fluid">
                 <div class="row">
-                    <div class="col-4"> <img id="logo" src="https://avatars.yandex.net/get-music-content/99892/371786db.a.8122168-1/m1000x1000?webp=false"
+                    <div class="col-4 col-md-2 p-3"> <img id="logo" src="https://avatars.yandex.net/get-music-content/99892/371786db.a.8122168-1/m1000x1000?webp=false"
                         alt="logo"></div>
-                    <div class="col-8"><h1 id="name">GIRAFFES</h1></div>
+                    <div class="col col-md py-5"><h1 id="name">GIRAFFES</h1></div>
                 </div>
+        </header>
+
+         <!-- navigation -->
+         <nav>
+            <a href="#menu" id="menu"> Меню </a>
+            <a href="#list" > Список </a>
+            <a href="#table" > Таблица </a>
+            <a href="#reg" > Регистрация </a>
+        </nav>
+
+        <!-- content -->
+        <div class="content">
+            <div class="container">
+                <div class="row" id="list">
+                    <diV class="col-12">
+                        <h2> Список: </h2>
+                    </diV>
+                    <diV class="col-12 col-md-6">
+                        <ol>
+                            <li><a href="http://example.com/" > ссылка на главную страницу сайта example.com </a></li>
+                            <li><a href="https://example.com/"> ссылка на главную страницу сайта example.com в протоколе https</a></li>
+                            <li><a href="ftp://example.com/file.zip"> ссылка на файл на сервере FTP без авторизации</a></li>
+                            <li><a href="ftp://user:password@example.com/myfile.zip">ссылка на файл на сервере FTP с авторизацией</a></li>
+                            <li><a href="https://example.com#bottom">ссылка на фрагмент страницы некоторого сайта</a></li>
+                            <li><a href="#reg">ссылку на фрагмент текущей страницы</a></li>
+                            <li><a href="https://www.wildberries.ru/catalog/0/search.aspx?sort=popular&search=черная+футболка">Ссылка с двумя параметрами</a></li>
+                            <li>
+                                <ul>
+                                    <li><a href="https://www.iana.org/domains" title="iana.org/domains">Domains</a></li>
+                                    <li><a href="https://www.iana.org/protocols" title="iana.org/protocols">Protocols</a></li>
+                                    <li><a href="https://www.iana.org/numbers" title="iana.org/numbers">Numbers</a></li>
+                                    <li><a href="https://www.iana.org/about" title="iana.org/about">About</a></li>
+                                </ul>
+                            </li>
+                            <li><a> ссылкa без href </a></li>
+                            <li><a href="">ссылка с пустым href</a></li>
+                            <li><a href="http://example.com" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+                            <li><!--noindex--><a href="http://example.com/">Ссылка с запретом на индексацию</a><!--/noindex--></li>
+                        </ol>
+                    </div>
+                
+                    <div class="col-12 col-md-6">
+                        <ol start="15">
+                            <li>Привет! Сегодня дождь и скверно, А мы не виделись, наверно, сто лет. </br>
+                            Тебе в <a href="https://online.metro-cc.ru/">метро</a>? Скажи на милость,</br>
+                            А ты совсем не изменилась, нет-нет.</p></li>
+                            <li><a href="https://cats.com/"><img src="https://fikiwiki.com/uploads/posts/2022-02/1644853972_11-fikiwiki-com-p-zhirafi-krasivie-kartinki-12.jpg"
+                                width="190" height="190"
+                                alt="Картинка жираф"></a></li>
+                                <li><img src="https://mathematics-tests.com/matematika/1-klass/matematika_1_klass_zadaniya_peterson_1_7.jpg" 
+                                    alt="картинка квадратики и кружочки" usemap="#Navigation">
+                                    
+                                <map name="Navigation">
+                                    <area shape="rect" coords="133,27,186,80" href="https://ru.wikipedia.org/wiki/" alt="Wikipedia">
+                                    <area shape="circle" coords="57,57,29" href="https://ya.ru/" alt="Yandex">
+                                </map>
+                            </li>
+                            <li><a href="news.html">относительная на страницу в текущем каталоге</a></li>
+                            <li><a href="about/myfamily.html">ссылка в каталоге about</a></li>
+                            <li><a href="../magazine.html">относительная на страницу в каталоге уровнем выше текущего</a></li>
+                            <li><a href="../../news.html">относительная на страницу в каталоге двумя уровнями выше</a></li>
+                            <li><a href="/">сокращенная на главную</a></li>
+                            <li><a href="/news/sport.html">сокращенная ссылка на внутреннюю</a></li> 
+                        </ol>
+                    </diV>
+                </div>  
+
+            <div class="row" id="table">
+                <table>
+                    <tr>
+                        <th>Колонка 1</th>
+                        <th>Колонка 2</th>
+                        <th>Колонка 3</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Ячейка 11 объединенная с 12</td>
+                        <td>Ячейка 13</td> 
+                    </tr>
+                    <tr>
+                        <td>Ячейка 21</td>
+                        <td>Ячейка 22</td>
+                        <td>Ячейка 23</td>              
+                    </tr> 
+                    
+                    <tr>
+                        <td colspan="2">Ячейка 31 объединенная с 32</td>
+                        <td rowspan="2">Ячейка 33 <br> объединенная с 43</td> 
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Ячейка 41</td>
+                        <td>Ячейка 42</td> 
+                    </tr>
+                    
+                    <tr>
+                        <td>Ячейка 51</td>
+                        <td>Ячейка 52</td> 
+                        <td>Ячейка 53</td> 
+                    </tr>     
+                </table>
             </div>
-       </header>
-    </body>
+            
+            <div class="row" id="reg">
+                <h2>Регистрация</h2>
+                <form action="/" 
+                method="POST">
+                
+                <label>
+                    Имя:
+                    <input name="field-name-1"
+                    type="text" 
+                    required placeholder="Ваше имя">
+                </label> <br>
+                
+                <label>
+                    E-mail: 
+                    <input name="field-email"
+                    type="email" 
+                    required placeholder="Электронная почта"> 
+                </label> <br><br>
+                
+                <label>
+                    Дата Рождения: 
+                    <input name="field-date"
+                    type="date"
+                    value="2022-02-22">
+                </label> <br><br>
+                
+                Ваш пол: <br> 
+                <label>
+                    <input type="radio" checked="checked"
+                    name="radio-group-1" value="жен">
+                    Женский &#9792;
+                </label>
+                
+                <label>
+                    <input type="radio"
+                    name="radio-group-1" value="муж">
+                    Мужской &#9794;
+                </label> <br><br>
+                
+                Количество Ваших конечностей: <br> 
+                <label>
+                    <input type="radio" 
+                    name="radio-group-2" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" 
+                    name="radio-group-2" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" 
+                    name="radio-group-2" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" checked="checked" 
+                    name="radio-group-2" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" 
+                    name="radio-group-2" value="999999">
+                    999999
+                </label> <br> <br>
+                
+                <label>
+                    Ваши сверхспособности:<br>
+                    <select name="select" multiple="multiple">
+                        <option value="1" selected="selected">Бессмертие</option>
+                        <option value="2">Прохождение сквозь стены</option>
+                        <option value="3" selected="selected">Левитация</option>
+                    </select>
+                </label><br><br>
+                
+                <label>
+                    Биография: <br>
+                    <textarea name="field-name-2"> Расскажите о себе... </textarea>
+                </label><br><br>
+                
+                <label>
+                    <input type="checkbox"
+                    name="check-1">
+                    С контрактом ознакомлен(a)
+                </label><br>
+                <input type="submit" value="Отправить">   
+            </form>
+        </div>
+        </div>
+    </div>
+    
+</body>
 </html>
