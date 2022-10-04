@@ -1,0 +1,25 @@
+ html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+#logo{
+    border-style: solid;
+    border-color: rgb(31, 137, 98);
+    width: 100px;
+    height: 100px;
+}
+
+ header{
+    background-color:rgb(164, 240, 71);
+    color:rgb(3, 4, 4);
+} 
+
+/* footer {
+    background-color:rgb(43,137,31);
+} */
+ 
+
