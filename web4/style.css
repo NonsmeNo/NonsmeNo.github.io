@@ -4,6 +4,7 @@
 
 body{
     margin: 0;
+    background-color: rgb(71, 68, 68);
 }
 
 #logo{
@@ -18,8 +19,14 @@ body{
     color:rgb(3, 4, 4);
 } 
 
-/* footer {
-    background-color:rgb(43,137,31);
-} */
+.content .row{
+    background-color: rgb(252, 250, 250);
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
  
+
 
