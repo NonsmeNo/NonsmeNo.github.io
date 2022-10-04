@@ -4,7 +4,6 @@
 
 body{
     margin: 0;
-    background-color: rgb(71, 68, 68);
 }
 
 #logo{
@@ -19,12 +18,43 @@ body{
     color:rgb(3, 4, 4);
 } 
 
+nav{
+    background-color: rgb(230, 173, 30);;
+}
+
 .content .row{
-    background-color: rgb(252, 250, 250);
+    background-color: rgb(240, 233, 236);
+}
+
+footer{
+    background-color:rgb(43, 137, 31);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border-style: solid;
+}
+table tbody tr:nth-child(odd){
+	background: #fff;
+}
+table tbody tr:nth-child(even){
+	background: #daea9a;
+}
+
+table th {
+	background: rgb(230, 173, 30);
 }
 
 @media screen and (min-width: 768px) {
 
+}
+
+@media screen and (min-width: 768px) {
+  
 }
 
  
