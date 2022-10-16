@@ -22,7 +22,6 @@ body{
 nav .d-flex{
     background-color: rgb(230, 173, 30);
     border-radius: 5px;
-    box-sizing: border-box;
 }
 
 nav a{
