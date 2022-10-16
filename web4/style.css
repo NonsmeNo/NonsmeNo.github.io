@@ -1,4 +1,4 @@
-html{
+ html{
     box-sizing: border-box;
 }
 
@@ -19,8 +19,10 @@ body{
     color:rgb(3, 4, 4);
 } 
 
-nav{
-    background-color: rgb(230, 173, 30);;
+nav .d-flex{
+    background-color: rgb(230, 173, 30);
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 nav a{
@@ -36,6 +38,7 @@ nav a:hover{
     border-style: solid;
     border-color: rgb(43, 137, 31);
     border-width: 5px;
+    border-radius: 5px;
 }
 
 
@@ -58,7 +61,6 @@ table tbody tr:nth-child(even){
 table th {
 	background: rgb(230, 173, 30);
 }
-
  
 
 
