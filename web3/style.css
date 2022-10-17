@@ -132,7 +132,8 @@ height:60px;
         max-width: 960px;
         margin: 0px auto 0px auto;
         display: flex;
-
+        justify-content: flex-start;
+    
     }
 
     nav{
