@@ -36,10 +36,9 @@ input{
     color: rgb(67, 71, 71);
 }
 
-.active {
-   background-color: rgb(15, 137, 244);
-}
 
 button:hover {
     background: rgb(102, 98, 231);
+    color: aliceblue;
 }
+
