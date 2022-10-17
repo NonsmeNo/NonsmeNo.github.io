@@ -1,11 +1,14 @@
- html{
-    box-sizing: border-box;
-}
-
 body{
     margin: 0;
+    box-sizing: border-box;
     background-color: black;
 }
+
+header{
+   background-color:rgb(164, 240, 71);
+   color:rgb(3, 4, 4);
+} 
+
 
 #logo{
     border-style: solid;
@@ -14,17 +17,12 @@ body{
     height: 100px;
 }
 
- header{
-    background-color:rgb(164, 240, 71);
-    color:rgb(3, 4, 4);
-} 
-
-nav .d-flex{
+nav {
     background-color: rgb(230, 173, 30);
     border-radius: 5px;
 }
 
-nav a{
+nav a {
     color: black;
     text-decoration: none;
 }
@@ -32,17 +30,23 @@ nav a{
 nav a:hover{
     color: rgb(12, 110, 33);
 }
+
+footer{
+    background-color:rgb(43, 137, 31);
+}
+
+.center{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
 .content .row{
     background-color: rgb(240, 233, 236);
     border-style: solid;
     border-color: rgb(43, 137, 31);
     border-width: 5px;
     border-radius: 5px;
-}
-
-
-footer{
-    background-color:rgb(43, 137, 31);
 }
 
 td, th {
@@ -60,7 +64,6 @@ table tbody tr:nth-child(even){
 table th {
 	background: rgb(230, 173, 30);
 }
- 
 
 
 
