@@ -2,19 +2,19 @@ body {
     margin: 0px;
     background-color: rgb(25, 23, 26);
     font-family: tahoma;
-  }
+}
 
 header {
     background-color:rgb(164, 240, 71);
     color:rgb(3, 4, 4);
-    }
+}
     
 .head {
     display: flex;
     align-items: center;
     justify-content: center;
     padding:20px;
-    }
+}
 
 
 header h1{
@@ -26,9 +26,7 @@ header h1{
     border-style: solid;
     border-color: rgb(31, 137, 98);
     width: 100px;
-    height: 100px;
-
-    
+    height: 100px;   
 }
 
 /* ------------- */
@@ -41,14 +39,16 @@ nav {
 
     text-align: left;
     padding: 10px;
-    margin-top: 20px;
+    margin: 20px 5px 0px 5px;
     background-color:rgb(230, 173, 30);
 }
+
 nav a {
     color:rgb(17, 18, 17);
     text-decoration: none; 
     margin: 10px; 
 }
+
 nav a:hover {
     text-decoration: underline;
 }
@@ -59,8 +59,9 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: stretch;
+    margin: 0 5px;
 }
+
 .container {
     /* background-color: rgb(139, 227, 190); */
     background-color: white;
@@ -71,7 +72,7 @@ nav a:hover {
     margin: 20px 5px 0px 5px;
 }
 
-.container-2
+.table
 {
     order: 1;
 }
@@ -122,11 +123,12 @@ footer {
 }
 
 
-@media screen and (min-width: 800px) {  
+@media screen and (min-width: 768px) {  
     
     body{
         font-family: cursive;
     }
+
     .head{
         max-width: 960px;
         margin: 0px auto 0px auto;
@@ -143,16 +145,16 @@ footer {
         flex-direction: row;
     }
 
-   /* ---------- */
+    /* ---------- */
     .content
     {
         max-width: 960px;
         margin: 0px auto 20px auto;  
     }
-    
-  .container-3
+
+    .form
     {
         order: 1;
     }
 
-  }
+}
