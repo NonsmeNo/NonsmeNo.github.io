@@ -2,6 +2,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     background-color: black;
+    font-family:cursive;
 }
 
 header{
@@ -42,7 +43,7 @@ footer{
 
 
 .content .row{
-    background-color: rgb(240, 233, 236);
+    background-color: white;
     border-style: solid;
     border-color: rgb(43, 137, 31);
     border-width: 5px;
@@ -54,6 +55,7 @@ td, th {
     border-width: 3px;
     border-color: black;
 }
+
 table tbody tr:nth-child(odd){
 	background: #fff;
 }
@@ -64,7 +66,4 @@ table tbody tr:nth-child(even){
 table th {
 	background: rgb(230, 173, 30);
 }
-
-
-
 
