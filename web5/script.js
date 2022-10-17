@@ -1,16 +1,23 @@
+const f1 = document.getElementsByName("field1");
+const f2 = document.getElementsByName("field2");
+const r = document.getElementById("result");
+const btn = document.querySelector('button');
+
+const reg = /\D/;
+
 function sum() {
-    let f = document.getElementsByName("field");
-    let r = document.getElementById("result");
-        r.innerHTML = f[0].value * f[1].value;    
-       return false;
+    if(reg.test(f1[0].value) || reg.test(f2[0].value))
+        r.textContent = 'Неверный формат';
+    else {
+        r.textContent = f1[0].value * f2[0].value; 
+        console.log('!');
+    }
 }
 
-let btn = document.querySelector('button');
 
 btn.addEventListener('click', function () {
     console.log('bottom (Вычисление суммы) is Clicked');
-    this.classList.add("active");
+    sum();
 });
-
 
 
