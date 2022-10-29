@@ -13,12 +13,9 @@ window.addEventListener('DOMContentLoaded', function() {
             r.textContent = f1[0].value * f2[0].value; 
             console.log('!');
         }
+        
+    btn.addEventListener('click', function () {
+        console.log('bottom (Вычисление суммы) is Clicked');
+        sum();
+    });
 });
-
-
-btn.addEventListener('click', function () {
-    console.log('bottom (Вычисление суммы) is Clicked');
-    sum();
-});
-
-
