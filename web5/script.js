@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+
     const f1 = document.getElementsByName("field1");
     const f2 = document.getElementsByName("field2");
     const r = document.getElementById("result");
@@ -18,4 +18,3 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('bottom (Вычисление суммы) is Clicked');
         sum();
     });
-});
