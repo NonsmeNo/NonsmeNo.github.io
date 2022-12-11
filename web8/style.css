@@ -9,7 +9,7 @@ form {
     color: rgb(173,181,189);
     border: 1px solid rgb(33,150,243);
     max-width: 450px;
-    margin: 20px auto 20px auto;
+    margin: 10px 10px 10px 10px;
     background-color: rgb(33,37,41);
 }
 
@@ -31,6 +31,10 @@ form button {
     height: 60px;
 }
 
+form button:hover {
+    background-color: rgb(142, 40, 226);
+    border: solid rgb(142, 40, 226);
+}
 form input {
     border-radius: 5px;
     border: 1px solid rgb(173,181,189);
@@ -48,4 +52,37 @@ form textarea {
     color: aliceblue;
     border-radius: 5px;
     border: 1px solid rgb(173,181,189);
+}
+
+
+.main_button {
+    max-width: 1000px;
+    margin: 60px auto 20px auto;
+}
+.main_button button{
+    background-color: rgb(33,150,243);
+    border-radius: 5px;
+    border: solid rgb(33,150,243);
+    padding: 20px 30px 20px 30px;
+    color: white;
+}
+
+.main_button button:hover {
+    background-color: rgb(142, 40, 226);
+    border: rgb(142, 40, 226);
+}
+
+.main_button h1 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+@media screen and (min-width: 470px) { 
+    form {
+        margin: 20px auto 20px auto;
+    }
 }
