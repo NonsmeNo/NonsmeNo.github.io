@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="icon.ico">
+    <title>FORM</title>
+</head>
+<body>
+    <form>
+        <div class="row m-5">
+            <div class="item">
+                <h2>Написать отзыв</h2>
+            </div>
+            <div class="item">
+                <label>Имя</label>
+                <input type="text">
+            </div>
+            <div class="item">
+                    <label>E-mail</label> 
+                    <input type="text">     
+            </div>
+            <div class="item">
+                <label>Текст отзыва</label>
+                <textarea name="field-name-2"></textarea>
+            </div>
+
+            <div class="сheckbox d-flex align-items-start">
+                <input class="col-1 mt-2" type="checkbox" id="data" name="data">
+                <label class="ms-1" for="data">Согласиться на обработку персональных данных</label>
+            </div>
+
+            <div class="item">
+                <button>Отправить</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
