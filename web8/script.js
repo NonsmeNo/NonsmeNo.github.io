@@ -41,13 +41,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 2000
             );
         } else {
-            fetch('https://api.slapform.com/k6boe3mx8', {
+          fetch('https://api.slapform.com/k6boe3mx8', {
                 method: 'POST',
                 body: JSON.stringify({ // The data you want submitted and emailed to you
                 name: inputs[0].value,
                 email: inputs[1].value,
                 message: textarea.value
-            })
+                }), 
+                headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+              },
             })
             .then(function (response) { // This function runs only on success
                 block.style.background = "rgb(21, 216, 109)";
@@ -57,11 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             })
             .catch(function (response) { // This function runs only on error
-            console.log('Fail!', response);
-            block.innerText = "Ошибка отправки формы";
-            });
-
-            
+                console.log('Fail!', response);
+              })
+              .finally(function () { // This function runs regardless of success or error
+                console.log('This always runs!');
+              });   
         }
         document.body.appendChild(block);
             setTimeout ( function() {
