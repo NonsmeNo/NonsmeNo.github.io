@@ -12,35 +12,37 @@
     <link rel="icon" href="icon.ico">
     <title>FORM</title>
 </head>
-<body>
-    <header>
-    <div class="main_button d-flex flex-column align-items-center">
-        <h1>Нам "очень" важен отзыв каждого клиента!</h1>
-        <button>Оставить отзыв</button>
-    </div>
-</header>
 
-    <form method="POST" action="https://api.slapform.com/Lera.53rus@yandex.ru">
+<body>
+    <section>
+        <div class="main_button d-flex flex-column align-items-center">
+            <h1>Нам "очень" важен отзыв каждого клиента!</h1>
+            <button>Оставить отзыв</button>
+        </div>
+    </section>
+
+
+    <form>
         <div class="row m-5">
             <div class="item">
                 <h2>Написать отзыв</h2>
             </div>
             <div class="item">
                 <label>Имя</label>
-                <input type="text">
+                <input type="text" name="clientName input">
             </div>
             <div class="item">
                     <label>E-mail</label> 
-                    <input type="text">     
+                    <input type="text" name="clientEmail input">     
             </div>
             <div class="item">
                 <label>Текст отзыва</label>
-                <textarea name="field-name-2"></textarea>
+                <textarea name="clientText input"></textarea>
             </div>
 
-            <div class="сheckbox d-flex align-items-start">
-                <input class="col-1 mt-2" type="checkbox" id="data" name="data">
-                <label class="ms-1" for="data">Согласиться на обработку персональных данных</label>
+            <div class="d-flex align-items-start">
+                <input class="col-1 mt-2 сheckbox" type="checkbox" id="data" name="data">
+                <label class="ms-1 " for="data">Согласиться на обработку персональных данных</label>
             </div>
 
             <div class="item">
@@ -48,5 +50,8 @@
             </div>
         </div>
     </form>
+
+
+</form>
 </body>
 </html>
