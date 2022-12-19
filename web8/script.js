@@ -7,20 +7,41 @@ document.addEventListener('DOMContentLoaded', function() {
     let inputs = document.querySelectorAll('input');
     let textarea = document.querySelector('textarea');
     const inputCheckbox = document.querySelector('.сheckbox');
+    
+    form.style.display = 'none';
 
+    window.addEventListener('popstate', () => {
+        form.style.display = 'none'; 
+        main.style.display = 'block';
+      });
     
 
-    form.style.display = 'none';
-    m_button.addEventListener('click', function (){
-        console.log('main_buttom is clicked');
+      m_button.addEventListener('click', function (){
+        history.pushState(null, null, '/form');
         main.style.display = 'none';
         form.style.display = 'block';
     });
+
+    inputs[0].addEventListener('change', function() {
+        localStorage.setItem('name', inputs[0].value);
+        });
+
+    inputs[1].addEventListener('change', function() {
+        localStorage.setItem('E-mail', inputs[1].value);
+        });
+
+    inputs[2].addEventListener('change', function() {
+        localStorage.setItem('text', textarea.value);
+        });
 
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         let block = document.createElement('div');
         block.classList.add('block'); 
+        
+        console.log(localStorage.getItem('name', inputs[0].value))
+        console.log(localStorage.setItem('name', inputs[1].value))
+        console.log(localStorage.setItem('name', textarea.value))
 
         if (inputs[0].value == "") {
             block.style.background = "rgb(221, 67, 67)";
@@ -41,7 +62,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 2000
             );
         } else {
-          fetch('https://api.slapform.com/k6boe3mx8', {
+            block.style.background = "rgb(255,204,0)";
+            block.innerText = "Подождите, форма отправляется";
+
+            document.body.appendChild(block);
+            setTimeout ( function() {
+                block.remove();
+                },
+                3000
+            );
+            fetch('https://api.slapform.com/Aej7MSCv7', {
                 method: 'POST',
                 body: JSON.stringify({ // The data you want submitted and emailed to you
                 name: inputs[0].value,
@@ -61,16 +91,16 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .catch(function (response) { // This function runs only on error
                 console.log('Fail!', response);
-              })
-              .finally(function () { // This function runs regardless of success or error
-                console.log('This always runs!');
-              });   
+              });
+                 
         }
+
         document.body.appendChild(block);
             setTimeout ( function() {
                 block.remove();
                 },
-                2000
+                3000
             );
     });
+
 });
