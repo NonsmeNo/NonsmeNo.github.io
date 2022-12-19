@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('E-mail', inputs[1].value);
         });
 
-    inputs[2].addEventListener('change', function() {ы
+    textarea.addEventListener('change', function() {ы
         localStorage.setItem('text', textarea.value);
         });
 
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function store() {
         inputs[0].value = localStorage.getItem('name');
         inputs[1].value = localStorage.getItem('E-mail');
-        textarea.value = localStorage.getItem('E-mail');
+        textarea.value = localStorage.getItem('text');
         }
 
 });
