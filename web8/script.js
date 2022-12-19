@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const inputCheckbox = document.querySelector('.сheckbox');
     
     form.style.display = 'none';
-
+    store();
     window.addEventListener('popstate', () => {
         form.style.display = 'none'; 
         main.style.display = 'block';
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('E-mail', inputs[1].value);
         });
 
-    inputs[2].addEventListener('change', function() {
+    inputs[2].addEventListener('change', function() {ы
         localStorage.setItem('text', textarea.value);
         });
 
@@ -39,9 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
         let block = document.createElement('div');
         block.classList.add('block'); 
         
-        console.log(localStorage.getItem('name', inputs[0].value))
-        console.log(localStorage.setItem('name', inputs[1].value))
-        console.log(localStorage.setItem('name', textarea.value))
 
         if (inputs[0].value == "") {
             block.style.background = "rgb(221, 67, 67)";
@@ -102,5 +99,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 3000
             );
     });
+
+    function store() {
+        inputs[0].value = localStorage.getItem('name');
+        inputs[1].value = localStorage.getItem('E-mail');
+        textarea.value = localStorage.getItem('E-mail');
+        }
 
 });
