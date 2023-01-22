@@ -1,0 +1,13 @@
+.modal {
+    position: absolute;
+    background-color: rgb(65, 156, 235);
+    width: 0px;
+    height: 0px;
+    margin-top: 100px;
+    margin-left: 800px;
+}
+
+#but1 {
+    margin-top: 100px;
+    margin-left: 800px;
+}
