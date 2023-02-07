@@ -1,0 +1,19 @@
+body {
+    background-color: gray;
+    color: rgb(252, 250, 248);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content img {
+    margin: 5px 100px 20px 100px;
+    border-radius: 10px;
+    
+}
+
+.content h1 {
+    text-align: center;
+}
